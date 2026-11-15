@@ -1,3 +1,4 @@
+// 智能儀表版
 import { state, filterState } from '../core/state.js';
 import { isMobile } from '../core/controls.js';
 import { ensureWeatherData } from './weatherPanel.js';
@@ -126,12 +127,11 @@ dashDock.innerHTML = `
     <div class="dash-section-title">🚰 淨水濾心剩餘</div>
     <div class="dash-filter-list" id="dash-filter-list"></div>
   </div>
-  <button class="dash-tab" aria-label="智慧儀表板">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/>
-      <rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/>
-    </svg>
-  </button>`;
+<button class="dash-tab" aria-label="智慧儀表板">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2.5 1.1 L3.5 1.1 Q4.2 1.1 4.74 1.55 L16.26 11.15 Q16.8 11.6 16.27 12.06 L4.53 22.34 Q4.0 22.8 3.3 22.8 L2.5 22.8 Q1.8 22.8 1.8 22.1 L1.8 1.8 Q1.8 1.1 2.5 1.1 Z"/>
+  </svg>
+</button>`;
 document.body.appendChild(dashDock);
 
 const dashFilterEls = {};
