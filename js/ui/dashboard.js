@@ -33,7 +33,7 @@ dashStyleTag.textContent = `
 .dash-panel {
   width: min(86vw, 360px); height: 100%; display: flex; flex-direction: column;
   box-sizing: border-box; padding: 14px; overflow-x: hidden; overflow-y: auto;
-  background: rgba(14, 18, 30, 0.78);
+  background: rgba(252, 148, 3, 0.3);
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255,255,255,0.16); border-left: none; border-radius: 0 24px 24px 0;
   box-shadow: 0 10px 40px rgba(0,0,0,0.4);
@@ -45,7 +45,7 @@ dashStyleTag.textContent = `
 .dash-title { font-size: var(--dash-title-font); font-weight: 600; letter-spacing: 1px; color: #fff; margin-bottom: 10px; flex-shrink: 0; }
 .dash-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; flex-shrink: 0; }
 .dash-card {
-  background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(39, 23, 0, 0.89); border: 1px solid rgba(255,255,255,0.12);
   border-radius: 14px; padding: 9px 10px; display: flex; flex-direction: column; gap: 4px; min-width: 0;
 }
 .dash-card-label { font-size: var(--dash-font); font-weight: 500; color: #ffffff; }
