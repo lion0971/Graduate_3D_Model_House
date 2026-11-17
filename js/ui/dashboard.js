@@ -43,7 +43,7 @@ dashStyleTag.textContent = `
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-color: #e1f501;
+  background-color: #eaf667;
   margin-right: 3px;
   border-radius: 1px;
 }
