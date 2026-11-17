@@ -33,19 +33,27 @@ dashStyleTag.textContent = `
 .dash-panel {
   width: min(86vw, 360px); height: 100%; display: flex; flex-direction: column;
   box-sizing: border-box; padding: 14px; overflow-x: hidden; overflow-y: auto;
-  background: rgba(252, 148, 3, 0.3);
+  background: rgba(14, 18, 30, 0.75);
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255,255,255,0.16); border-left: none; border-radius: 0 24px 24px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3); border-left: none; border-radius: 0 24px 24px 0;
   box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-  color: #f0f4f8; text-shadow: 0 1px 2px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.6);
+  color: #f0f4f8; text-shadow: 0 1px 2px rgba(0,0,0,0.9), 0 0 7px rgba(0, 0, 0, 0.72);
+}
+.light-blue-square {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #e1f501;
+  margin-right: 3px;
+  border-radius: 1px;
 }
 .dash-panel::-webkit-scrollbar { width: 6px; }
-.dash-panel::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.3); border-radius: 3px; }
+.dash-panel::-webkit-scrollbar-thumb { background: rgba(14, 18, 30, 0.78); border-radius: 3px; }
 .dash-panel { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.3) transparent; }
 .dash-title { font-size: var(--dash-title-font); font-weight: 600; letter-spacing: 1px; color: #fff; margin-bottom: 10px; flex-shrink: 0; }
 .dash-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; flex-shrink: 0; }
 .dash-card {
-  background: rgba(39, 23, 0, 0.89); border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.12);
   border-radius: 14px; padding: 9px 10px; display: flex; flex-direction: column; gap: 4px; min-width: 0;
 }
 .dash-card-label { font-size: var(--dash-font); font-weight: 500; color: #ffffff; }
@@ -95,7 +103,7 @@ export const dashDock = document.createElement('div');
 dashDock.className = 'dash-dock';
 dashDock.innerHTML = `
   <div class="dash-panel">
-    <div class="dash-title">🏠 智慧儀表板</div>
+    <div class="dash-title"><span class="light-blue-square"></span>智慧儀表板</div>
     <div class="dash-grid">
       <div class="dash-card">
         <div class="dash-card-label">🌡️ 溫度</div>
@@ -124,7 +132,7 @@ dashDock.innerHTML = `
         <div class="state">--</div>
       </div>
     </div>
-    <div class="dash-section-title">🚰 淨水濾心剩餘</div>
+    <div class="dash-section-title"><span class="light-blue-square"></span>淨水濾心剩餘</div>
     <div class="dash-filter-list" id="dash-filter-list"></div>
   </div>
 <button class="dash-tab" aria-label="智慧儀表板">
